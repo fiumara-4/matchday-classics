@@ -1,5 +1,5 @@
 {
-  "name": "matchday-classics-x",
+  "name": "matchday-classics",
   "private": true,
   "scripts": {
     "dev": "next dev",
