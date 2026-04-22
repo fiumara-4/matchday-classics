@@ -2,89 +2,76 @@
   width: 100%;
   max-width: 700px;
   aspect-ratio: 1 / 1.414;
-
   background: #f4efe3;
-  border: 2px solid #111;
-
   display: flex;
   flex-direction: column;
+}
+
+/* HERO (HEADER VERDE) */
+.hero {
+  background: #1f5a3a;
+  color: #efe6d0;
+  padding: 40px 20px 60px 20px;
+  text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-/* grain texture */
-.poster::after {
+/* texture carta */
+.hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
-  opacity: 0.15;
+  background-image: url("/noise.svg");
+  opacity: 0.25;
   pointer-events: none;
 }
 
-/* HEADER */
-.header {
-  padding: 52px 30px 44px 30px;
-  text-align: center;
-  color: #fff;
-}
-
-.score {
-  font-size: 56px;
-  letter-spacing: -0.5px;
-  margin: 0;
-  font-weight: 700;
-}
-
-/* META */
-.meta {
-  text-align: center;
-  padding: 18px;
-  border-bottom: 1px solid #111;
-
-  font-size: 12px;
-  letter-spacing: 2.5px;
-  font-variant-caps: small-caps;
-}
-
-/* CONTENT */
-.content {
+/* LINEA SUPERIORE */
+.topLine {
   display: flex;
-  padding: 50px;
-  gap: 50px;
-  flex-grow: 1;
-}
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
 
-.team {
-  flex: 1;
-}
-
-.teamName {
-  font-size: 20px;
-  margin-bottom: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600;
-}
-
-.players {
-  font-size: 13px;
-  line-height: 1.85;
-  font-weight: 400;
-}
-
-/* divider */
-.divider {
-  width: 1px;
-  background: #111;
-}
-
-/* FOOTER */
-.footer {
-  border-top: 1px solid #111;
-  padding: 14px;
-  text-align: center;
-
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 3px;
+}
+
+.line {
+  width: 60px;
+  height: 1px;
+  background: #efe6d0;
+  opacity: 0.6;
+}
+
+.star {
+  font-size: 14px;
+}
+
+/* SCORE LINE */
+.scoreLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* SQUADRE */
+.team {
+  font-size: 110px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* RISULTATO */
+.score {
+  font-size: 100px;
+  font-weight: 700;
+  color: #d9c89e;
+}
+
+/* resto poster placeholder */
+.body {
+  flex-grow: 1;
 }
