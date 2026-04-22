@@ -1,19 +1,14 @@
-import type { Metadata } from 'next';
-import { Playfair_Display, Libre_Franklin } from 'next/font/google';
+import type { Metadata } from "next";
+import { Oswald } from "next/font/google";
 
-const serif = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '700']
-});
-
-const sans = Libre_Franklin({
-  subsets: ['latin'],
-  weight: ['300', '500']
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
-  title: 'Matchday Classics',
-  description: 'Vintage football posters'
+  title: "Matchday Classics",
+  description: "Vintage football posters generator",
 };
 
 export default function RootLayout({
@@ -23,7 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${serif.className} ${sans.className}`}>
+      <body
+        className={oswald.className}
+        style={{
+          margin: 0,
+          background: "#d6d1c4", // sfondo carta
+        }}
+      >
         {children}
       </body>
     </html>
