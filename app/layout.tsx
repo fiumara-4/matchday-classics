@@ -1,9 +1,14 @@
 import type { Metadata } from 'next';
-import { Playfair_Display } from 'next/font/google';
+import { Playfair_Display, Libre_Franklin } from 'next/font/google';
 
-const playfair = Playfair_Display({
+const serif = Playfair_Display({
   subsets: ['latin'],
   weight: ['400', '700']
+});
+
+const sans = Libre_Franklin({
+  subsets: ['latin'],
+  weight: ['300', '500']
 });
 
 export const metadata: Metadata = {
@@ -18,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={playfair.className}>
+      <body className={`${serif.className} ${sans.className}`}>
         {children}
       </body>
     </html>
