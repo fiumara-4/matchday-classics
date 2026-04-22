@@ -54,23 +54,26 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-top: 30px;
+  flex-wrap: nowrap; /* 🔥 IMPORTANTISSIMO */
+  white-space: nowrap;
 }
 
 /* SQUADRE */
 .team {
-  font-size: 110px;
+  font-size: clamp(48px, 6vw, 110px);
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 1;
+  white-space: nowrap;
 }
 
 /* RISULTATO */
 .score {
-  font-size: 100px;
+  font-size: clamp(44px, 5vw, 100px);
   font-weight: 700;
   color: #d9c89e;
   line-height: 1;
+  white-space: nowrap;
 }
 
 /* resto poster placeholder */
