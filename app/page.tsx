@@ -27,7 +27,7 @@ export default function Home() {
           <div className={styles.scoreLine}>
             <span className={styles.team}>CELTIC</span>
             <span className={styles.score}>2-1</span>
-            <span className={styles.team}>INTER</span>
+            <span className={styles.team}>INTERNAZIONALE FC</span>
           </div>
 
         </div>
