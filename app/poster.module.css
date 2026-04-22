@@ -49,35 +49,18 @@
   font-size: 14px;
 }
 
-/* SCORE LINE */
 .scoreLine {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: baseline;
   width: 100%;
-  container-type: inline-size; /* fondamentale per la responsività */
 }
 
-/* SQUADRE */
-.team {
+.team, .score {
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 1;
   white-space: nowrap;
-  text-align: center;
-
-  font-size: clamp(28px, 10cqi, 110px);
-}
-
-/* RISULTATO */
-.score {
-  font-weight: 700;
-  color: #d9c89e;
-  line-height: 1;
-  white-space: nowrap;
-  text-align: center;
-
-  font-size: clamp(28px, 10cqi, 110px);
 }
 
 /* resto poster placeholder */
