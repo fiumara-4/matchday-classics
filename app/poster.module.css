@@ -3,24 +3,37 @@
   max-width: 700px;
   aspect-ratio: 1 / 1.414;
 
-  background: #fdfaf3;
+  background: #f4efe3;
   border: 2px solid #111;
 
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* grain texture */
+.poster::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.15;
+  pointer-events: none;
 }
 
 /* HEADER */
 .header {
-  padding: 50px 30px;
+  padding: 52px 30px 44px 30px;
   text-align: center;
   color: #fff;
 }
 
 .score {
   font-size: 56px;
-  letter-spacing: 1px;
+  letter-spacing: -0.5px;
   margin: 0;
+  font-weight: 700;
 }
 
 /* META */
@@ -30,19 +43,18 @@
   border-bottom: 1px solid #111;
 
   font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-variant-caps: small-caps;
 }
 
 /* CONTENT */
 .content {
   display: flex;
-  padding: 50px 50px 30px 50px;
+  padding: 50px;
   gap: 50px;
   flex-grow: 1;
 }
 
-/* TEAM */
 .team {
   flex: 1;
 }
@@ -51,14 +63,17 @@
   font-size: 20px;
   margin-bottom: 14px;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .players {
   font-size: 13px;
-  line-height: 1.9;
+  line-height: 1.85;
+  font-weight: 400;
 }
 
-/* DIVIDER LINE */
+/* divider */
 .divider {
   width: 1px;
   background: #111;
