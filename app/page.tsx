@@ -7,7 +7,8 @@ export default function Home() {
     away: "Inter",
     score: "2 — 1",
     competition: "European Cup Final 1966–67",
-    stadium: "Lisbon · 25 May 1967",
+    stadium: "Lisbon",
+    date: "25 May 1967",
     color: "#1f7a3b"
   };
 
@@ -17,11 +18,13 @@ export default function Home() {
       minHeight: "100vh",
       display: "flex",
       justifyContent: "center",
-      alignItems: "center"
+      alignItems: "center",
+      padding: "40px"
     }}>
 
       <div className={styles.poster}>
 
+        {/* HEADER */}
         <div
           className={styles.header}
           style={{ background: match.color }}
@@ -31,33 +34,53 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className={styles.subheader}>
-          <div>{match.competition}</div>
-          <div>{match.stadium}</div>
+        {/* META */}
+        <div className={styles.meta}>
+          {match.competition} · {match.stadium} · {match.date}
         </div>
 
+        {/* CONTENT */}
         <div className={styles.content}>
 
           <div className={styles.team}>
-            <h2>{match.home}</h2>
+            <div className={styles.teamName}>{match.home}</div>
             <div className={styles.players}>
-              Simpson<br/>Craig<br/>Gemmell<br/>Murdoch<br/>
-              McNeill<br/>Clark<br/>Johnstone<br/>
-              Wallace<br/>Chalmers<br/>Auld<br/>Lennox
+              Simpson<br/>
+              Craig<br/>
+              Gemmell<br/>
+              Murdoch<br/>
+              McNeill<br/>
+              Clark<br/>
+              Johnstone<br/>
+              Wallace<br/>
+              Chalmers<br/>
+              Auld<br/>
+              Lennox
             </div>
           </div>
 
+          <div className={styles.divider}></div>
+
           <div className={styles.team}>
-            <h2>{match.away}</h2>
+            <div className={styles.teamName}>{match.away}</div>
             <div className={styles.players}>
-              Sarti<br/>Burgnich<br/>Facchetti<br/>Bedin<br/>
-              Guarneri<br/>Picchi<br/>Jair<br/>
-              Mazzola<br/>Cappellini<br/>Suarez<br/>Corso
+              Sarti<br/>
+              Burgnich<br/>
+              Facchetti<br/>
+              Bedin<br/>
+              Guarneri<br/>
+              Picchi<br/>
+              Jair<br/>
+              Mazzola<br/>
+              Cappellini<br/>
+              Suarez<br/>
+              Corso
             </div>
           </div>
 
         </div>
 
+        {/* FOOTER */}
         <div className={styles.footer}>
           MATCHDAY CLASSICS
         </div>
