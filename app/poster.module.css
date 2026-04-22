@@ -1,53 +1,75 @@
 .poster {
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 1 / 1.414;
+
   background: #fdfaf3;
   border: 2px solid #111;
-  box-shadow: 0 0 0 6px #fdfaf3, 0 0 0 8px #111; }
 
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
 .header {
-  padding: 32px 20px;
+  padding: 50px 30px;
   text-align: center;
   color: #fff;
 }
 
 .score {
-  font-size: 44px;
+  font-size: 56px;
   letter-spacing: 1px;
   margin: 0;
 }
 
-.subheader {
+/* META */
+.meta {
   text-align: center;
-  padding: 14px;
+  padding: 18px;
   border-bottom: 1px solid #111;
-  font-size: 13px;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
+/* CONTENT */
 .content {
   display: flex;
-  padding: 30px;
-  gap: 40px;
+  padding: 50px 50px 30px 50px;
+  gap: 50px;
+  flex-grow: 1;
 }
 
+/* TEAM */
 .team {
   flex: 1;
 }
 
-.team h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.teamName {
+  font-size: 20px;
+  margin-bottom: 14px;
   text-transform: uppercase;
 }
 
 .players {
   font-size: 13px;
-  line-height: 1.7;
+  line-height: 1.9;
 }
 
+/* DIVIDER LINE */
+.divider {
+  width: 1px;
+  background: #111;
+}
+
+/* FOOTER */
 .footer {
   border-top: 1px solid #111;
+  padding: 14px;
   text-align: center;
-  padding: 10px;
+
   font-size: 11px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
