@@ -53,7 +53,7 @@
 .scoreLine {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   margin-top: 30px;
 }
 
@@ -62,6 +62,7 @@
   font-size: 110px;
   font-weight: 700;
   letter-spacing: 2px;
+  line-height: 1;
 }
 
 /* RISULTATO */
@@ -69,6 +70,8 @@
   font-size: 100px;
   font-weight: 700;
   color: #d9c89e;
+  line-height: 1;
+  transform: translateY(5px); /* 👈 aggiunta */
 }
 
 /* resto poster placeholder */
